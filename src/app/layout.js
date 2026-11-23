@@ -14,8 +14,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: 'Foods',
-  description: 'Browse popular foods in Dhaka',
+  title: {
+    default: 'FoodNest',
+    template: '%s | FoodNest',
+  },
+  description: 'FoodNest - Browse popular foods in Dhaka',
 };
 
 export default function RootLayout({ children }) {
